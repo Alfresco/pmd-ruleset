@@ -35,6 +35,9 @@
     </rule>
     <rule ref="category/java/bestpractices.xml/JUnit4SuitesShouldUseSuiteAnnotation" />
     <rule ref="category/java/bestpractices.xml/JUnit4TestShouldUseBeforeAnnotation" />
+    <!-- This will complain when adding a test using the JUnit 3 compatibility syntax: `extends TestCase` -->
+    <!-- We can fix by removing the extension and adding JUnit method annotations. -->
+    <!-- The rule will also complain if we use TestNG @Test annotations (see https://github.com/pmd/pmd/issues/4634 ) -->
     <rule ref="category/java/bestpractices.xml/JUnit4TestShouldUseTestAnnotation" />
     <rule ref="category/java/bestpractices.xml/JUnitAssertionsShouldIncludeMessage" />
     <rule ref="category/java/bestpractices.xml/JUnitTestsShouldIncludeAssert" />
