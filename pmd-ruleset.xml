@@ -302,7 +302,6 @@
     <!-- JavaScript Rules -->
     <rule ref="category/ecmascript/bestpractices.xml/AvoidWithStatement" />
     <rule ref="category/ecmascript/bestpractices.xml/ConsistentReturn" />
-    <rule ref="category/ecmascript/bestpractices.xml/GlobalVariable" />
     <rule ref="category/ecmascript/bestpractices.xml/ScopeForInVariable" />
     <rule ref="category/ecmascript/bestpractices.xml/UseBaseWithParseInt" />
 
@@ -311,7 +310,6 @@
     <rule ref="category/ecmascript/codestyle.xml/IfElseStmtsMustUseBraces" />
     <rule ref="category/ecmascript/codestyle.xml/IfStmtsMustUseBraces" />
     <rule ref="category/ecmascript/codestyle.xml/NoElseReturn" />
-    <rule ref="category/ecmascript/codestyle.xml/UnnecessaryBlock" />
     <rule ref="category/ecmascript/codestyle.xml/UnnecessaryParentheses" />
     <rule ref="category/ecmascript/codestyle.xml/UnreachableCode" />
     <rule ref="category/ecmascript/codestyle.xml/WhileLoopsMustUseBraces" />
