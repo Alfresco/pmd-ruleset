@@ -96,7 +96,7 @@
     <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions" />
     <rule ref="category/java/codestyle.xml/LongVariable">
         <properties>
-            <property name="minimum" value="46" />
+            <property name="minimum" value="33" />
         </properties>
     </rule>
     <rule ref="category/java/codestyle.xml/MDBAndSessionBeanNamingConvention" />
