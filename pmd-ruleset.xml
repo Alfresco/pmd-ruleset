@@ -88,7 +88,6 @@
             <property name="explicitLambdaParameterPattern" value="([a-z][a-zA-Z0-9]*|__*)" />
         </properties>
     </rule>
-    <rule ref="category/java/codestyle.xml/GenericsNaming" />
     <rule ref="category/java/codestyle.xml/IdenticalCatchBranches" />
     <rule ref="category/java/codestyle.xml/LinguisticNaming" />
     <rule ref="category/java/codestyle.xml/LocalHomeNamingConvention" />
