@@ -224,7 +224,6 @@
     <rule ref="category/java/errorprone.xml/CloseResource" />
     <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals" />
     <rule ref="category/java/errorprone.xml/ComparisonWithNaN" />
-    <rule ref="category/java/errorprone.xml/ConfusingArgumentToVarargsMethod" />
     <rule ref="category/java/errorprone.xml/DetachedTestCase" />
     <rule ref="category/java/errorprone.xml/DoNotCallGarbageCollectionExplicitly" />
     <rule ref="category/java/errorprone.xml/DoNotExtendJavaLangThrowable" />
