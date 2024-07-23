@@ -42,7 +42,7 @@
     <rule ref="category/java/bestpractices.xml/JUnitAssertionsShouldIncludeMessage" />
     <rule ref="category/java/bestpractices.xml/JUnitTestsShouldIncludeAssert">
         <properties>
-            <property name="extraAssertMethodNames" value="then,verify" />
+            <property name="extraAssertMethodNames" value="should,then,verify" />
         </properties>
     </rule>
     <rule ref="category/java/bestpractices.xml/JUnitUseExpected" />
