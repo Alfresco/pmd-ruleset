@@ -18,7 +18,7 @@ today=$(date +"%Y%m%d")
 for tag in "$@"
 do
     git tag "${tag}_${today}"
-    git push origin "$tag_$today"
+    git push origin "${tag}_${today}"
 done
 
 # Print the number of tags created.
