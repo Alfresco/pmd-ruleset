@@ -40,7 +40,11 @@
     <!-- The rule will also complain if we use TestNG @Test annotations (see https://github.com/pmd/pmd/issues/4634 ) -->
     <rule ref="category/java/bestpractices.xml/JUnit4TestShouldUseTestAnnotation" />
     <rule ref="category/java/bestpractices.xml/JUnitAssertionsShouldIncludeMessage" />
-    <rule ref="category/java/bestpractices.xml/JUnitTestsShouldIncludeAssert" />
+    <rule ref="category/java/bestpractices.xml/JUnitTestsShouldIncludeAssert">
+        <properties>
+            <property name="extraAssertMethodNames" value="should,then,verify" />
+        </properties>
+    </rule>
     <rule ref="category/java/bestpractices.xml/JUnitUseExpected" />
     <rule ref="category/java/bestpractices.xml/LooseCoupling" />
     <rule ref="category/java/bestpractices.xml/MethodReturnsInternalArray" />
@@ -53,12 +57,14 @@
     <rule ref="category/java/bestpractices.xml/ReplaceVectorWithList" />
     <rule ref="category/java/bestpractices.xml/SimplifiableTestAssertion" />
     <rule ref="category/java/bestpractices.xml/SystemPrintln" />
+    <rule ref="category/java/bestpractices.xml/UnnecessaryVarargsArrayCreation" />
     <rule ref="category/java/bestpractices.xml/UnusedAssignment" />
     <rule ref="category/java/bestpractices.xml/UnusedFormalParameter" />
     <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
     <rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
     <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" />
     <rule ref="category/java/bestpractices.xml/UseCollectionIsEmpty" />
+    <rule ref="category/java/bestpractices.xml/UseEnumCollections" />
     <rule ref="category/java/bestpractices.xml/UseStandardCharsets" />
     <rule ref="category/java/bestpractices.xml/UseTryWithResources" />
     <rule ref="category/java/bestpractices.xml/UseVarargs" />
@@ -89,6 +95,12 @@
         </properties>
     </rule>
     <rule ref="category/java/codestyle.xml/IdenticalCatchBranches" />
+    <rule ref="category/java/codestyle.xml/LambdaCanBeMethodReference">
+        <properties>
+            <property name="ignoreIfMayNPE" value="false" />
+            <property name="ignoreIfReceiverIsMethod" value="true" />
+        </properties>
+    </rule>
     <rule ref="category/java/codestyle.xml/LinguisticNaming" />
     <rule ref="category/java/codestyle.xml/LocalHomeNamingConvention" />
     <rule ref="category/java/codestyle.xml/LocalInterfaceSessionNamingConvention" />
