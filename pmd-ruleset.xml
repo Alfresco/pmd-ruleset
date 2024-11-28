@@ -25,7 +25,7 @@
     <rule ref="category/java/bestpractices.xml/AvoidStringBufferField" />
     <rule ref="category/java/bestpractices.xml/CheckResultSet" />
     <rule ref="category/java/bestpractices.xml/ConstantsInInterface" />
-    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" />
+    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitch" />
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
     <rule ref="category/java/bestpractices.xml/GuardLogStatement">
         <properties>
@@ -34,17 +34,9 @@
         </properties>
     </rule>
     <rule ref="category/java/bestpractices.xml/JUnit4SuitesShouldUseSuiteAnnotation" />
-    <rule ref="category/java/bestpractices.xml/JUnit4TestShouldUseBeforeAnnotation" />
     <!-- This will complain when adding a test using the JUnit 3 compatibility syntax: `extends TestCase` -->
     <!-- We can fix by removing the extension and adding JUnit method annotations. -->
     <!-- The rule will also complain if we use TestNG @Test annotations (see https://github.com/pmd/pmd/issues/4634 ) -->
-    <rule ref="category/java/bestpractices.xml/JUnit4TestShouldUseTestAnnotation" />
-    <rule ref="category/java/bestpractices.xml/JUnitAssertionsShouldIncludeMessage" />
-    <rule ref="category/java/bestpractices.xml/JUnitTestsShouldIncludeAssert">
-        <properties>
-            <property name="extraAssertMethodNames" value="should,then,verify" />
-        </properties>
-    </rule>
     <rule ref="category/java/bestpractices.xml/JUnitUseExpected" />
     <rule ref="category/java/bestpractices.xml/LooseCoupling" />
     <rule ref="category/java/bestpractices.xml/MethodReturnsInternalArray" />
@@ -57,6 +49,19 @@
     <rule ref="category/java/bestpractices.xml/ReplaceVectorWithList" />
     <rule ref="category/java/bestpractices.xml/SimplifiableTestAssertion" />
     <rule ref="category/java/bestpractices.xml/SystemPrintln" />
+    <rule ref="category/java/bestpractices.xml/UnitTestAssertionsShouldIncludeMessage" />
+    <rule ref="category/java/bestpractices.xml/UnitTestShouldIncludeAssert">
+        <properties>
+            <property name="extraAssertMethodNames" value="should,then,verify" />
+        </properties>
+    </rule>
+    <rule ref="category/java/bestpractices.xml/UnitTestShouldUseAfterAnnotation" />
+    <rule ref="category/java/bestpractices.xml/UnitTestShouldUseBeforeAnnotation" />
+    <rule ref="category/java/bestpractices.xml/UnitTestShouldUseTestAnnotation">
+        <properties>
+            <property name="testClassPattern" value="Test" />
+        </properties>
+    </rule>
     <rule ref="category/java/bestpractices.xml/UnnecessaryVarargsArrayCreation" />
     <rule ref="category/java/bestpractices.xml/UnusedAssignment" />
     <rule ref="category/java/bestpractices.xml/UnusedFormalParameter" />
@@ -254,7 +259,7 @@
     <rule ref="category/java/errorprone.xml/MisplacedNullCheck" />
     <rule ref="category/java/errorprone.xml/MissingStaticMethodInNonInstantiatableClass" />
     <rule ref="category/java/errorprone.xml/MoreThanOneLogger" />
-    <rule ref="category/java/errorprone.xml/NonCaseLabelInSwitchStatement" />
+    <rule ref="category/java/errorprone.xml/NonCaseLabelInSwitch" />
     <rule ref="category/java/errorprone.xml/NonSerializableClass" />
     <rule ref="category/java/errorprone.xml/NonStaticInitializer" />
     <rule ref="category/java/errorprone.xml/OverrideBothEqualsAndHashcode" />
