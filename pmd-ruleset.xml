@@ -34,6 +34,7 @@
             <property name="guardsMethods" value="isTraceEnabled,isDebugEnabled" />
         </properties>
     </rule>
+    <rule ref="category/java/bestpractices.xml/ImplicitFunctionalInterface" />
     <rule ref="category/java/bestpractices.xml/JUnit4SuitesShouldUseSuiteAnnotation" />
     <!-- This will complain when adding a test using the JUnit 3 compatibility syntax: `extends TestCase` -->
     <!-- We can fix by removing the extension and adding JUnit method annotations. -->
@@ -75,7 +76,6 @@
     <rule ref="category/java/bestpractices.xml/UseTryWithResources" />
     <rule ref="category/java/bestpractices.xml/UseVarargs" />
     <rule ref="category/java/bestpractices.xml/WhileLoopWithLiteralBoolean" />
-    <rule ref="category/java/bestpractices.xml/ImplicitFunctionalInterface" />
 
     <rule ref="category/java/codestyle.xml/AvoidDollarSigns" />
     <rule ref="category/java/codestyle.xml/AvoidProtectedFieldInFinalClass" />
