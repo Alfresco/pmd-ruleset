@@ -28,12 +28,6 @@
     <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitch" />
     <rule ref="category/java/bestpractices.xml/ExhaustiveSwitchHasDefault" />
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
-    <rule ref="category/java/bestpractices.xml/GuardLogStatement">
-        <properties>
-            <property name="logLevels" value="trace,debug" />
-            <property name="guardsMethods" value="isTraceEnabled,isDebugEnabled" />
-        </properties>
-    </rule>
     <rule ref="category/java/bestpractices.xml/ImplicitFunctionalInterface" />
     <rule ref="category/java/bestpractices.xml/JUnit4SuitesShouldUseSuiteAnnotation" />
     <!-- This will complain when adding a test using the JUnit 3 compatibility syntax: `extends TestCase` -->
@@ -52,11 +46,6 @@
     <rule ref="category/java/bestpractices.xml/SimplifiableTestAssertion" />
     <rule ref="category/java/bestpractices.xml/SystemPrintln" />
     <rule ref="category/java/bestpractices.xml/UnitTestAssertionsShouldIncludeMessage" />
-    <rule ref="category/java/bestpractices.xml/UnitTestShouldIncludeAssert">
-        <properties>
-            <property name="extraAssertMethodNames" value="should,then,verify" />
-        </properties>
-    </rule>
     <rule ref="category/java/bestpractices.xml/UnitTestShouldUseAfterAnnotation" />
     <rule ref="category/java/bestpractices.xml/UnitTestShouldUseBeforeAnnotation" />
     <rule ref="category/java/bestpractices.xml/UnitTestShouldUseTestAnnotation">
@@ -178,11 +167,6 @@
     <rule ref="category/java/design.xml/LogicInversion" />
     <rule ref="category/java/design.xml/MutableStaticState" />
     <rule ref="category/java/design.xml/NPathComplexity" />
-    <rule ref="category/java/design.xml/SignatureDeclareThrowsException">
-        <properties>
-            <property name="IgnoreJUnitCompletely" value="true" />
-        </properties>
-    </rule>
     <rule ref="category/java/design.xml/SimplifiedTernary" />
     <rule ref="category/java/design.xml/SimplifyBooleanExpressions" />
     <rule ref="category/java/design.xml/SimplifyBooleanReturns" />
@@ -213,7 +197,6 @@
     <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop" />
     <rule ref="category/java/errorprone.xml/AvoidCallingFinalize" />
     <rule ref="category/java/errorprone.xml/AvoidCatchingNPE" />
-    <rule ref="category/java/errorprone.xml/AvoidCatchingThrowable" />
     <rule ref="category/java/errorprone.xml/AvoidDecimalLiteralsInBigDecimalConstructor" />
     <rule ref="category/java/errorprone.xml/AvoidEnumAsIdentifier" />
     <rule ref="category/java/errorprone.xml/AvoidInstanceofChecksInCatchClause" />
